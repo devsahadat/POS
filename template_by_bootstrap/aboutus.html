@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design a full template by bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a href="" class="navbar-brand"><img src="image/logo.png" style="height: 45px;"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav popular">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu" style="background-color: #BADDf8;">
+                                <a href="aboutus.html" class="dropdown-item">About Us</a>
+                                <a href="mission.html" class="dropdown-item">Mission</a>
+                                <a href="" class="dropdown-item">Vission</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">News and Events</a>
+                        <a href="" class="nav-item nav-link">Contact Us</a>
+                        <a href="" class="nav-item nav-link">Login</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-success">
+                                        Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Banner Section -->
+    <section class="banner_part">
+        <img src="image/banner1.jpg" style="width: 100%;">
+    </section>
+    <!-- About Us Section -->
+    <section class="about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 style="padding-top: 15px; padding-bottom: 5px; border-bottom: 1px solid black; width: 11%;">About Us</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Part -->
+    <section class="footer_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 style="color: white;">Contact Us</h4>
+                    <p style="color: white;">
+                        Address: Shahi Eidgah, Sylhet, Mobile: 01738309749, Email: cse.devsahadat@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: white;">Follow Us</h4>
+                    <div class="social" style="margin-left: -42px;">
+                        <ul>
+                            <li><a href="https://facebook.com/sahadat49" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://facebook.com/sahadat49" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="https://facebook.com/sahadat49" target="blank"><i class="fab fa-youtube"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="color: white;padding: 50px 0px 10px 0px; ">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> @Developer Sahadat
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="gotoup">
+                    <img src="image/gotoup.png" style="width: 40px;height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></scrip> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"> 
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()>300){
+                $('.gotoup').fadeIn();
+            }
+            else{
+                $('.gotoup').fadeOut();
+            }
+        });
+        $('.gotoup').click(function(){
+           $('html,body').animate({scrollTop:0},500);
+        });
+    });
+        </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>  
+</html>     
